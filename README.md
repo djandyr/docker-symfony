@@ -4,10 +4,10 @@ Docker-symfony gives you everything you need for developing Symfony application.
 
 ## Installation
 
-1. Create a `.env` from the `.env.dist` file. Adapt it according to your symfony application
-
+1. Create a `.env` from the `.env.dist` file and load environment variables
     ```bash
     cp .env.dist .env
+    ./.env
     ```
 
 2. Build/run containers with (with and without detached mode)
