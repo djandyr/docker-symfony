@@ -17,24 +17,9 @@ Docker-symfony gives you everything you need for developing Symfony application.
     $ docker-compose up -d
     ```
 
-3. Update your system host file (add symfony.dev)
-    
-    ```bash
-    $ sudo echo "127.0.0.1 symfony.dev" >> /etc/hosts
-    ```
-        
-4. Prepare Symfony app
+3. Prepare Symfony app
 
-    1. Update app/config/parameters.yml
-
-        ```yml
-        # path/to/your/symfony-project/app/config/parameters.yml
-        parameters:
-            database_host: mysqldb
-            ...
-        ```
-
-    2. Composer install & create database
+    1. Composer install & create database
 
         ```bash
         $ docker-compose exec php bash
@@ -42,7 +27,6 @@ Docker-symfony gives you everything you need for developing Symfony application.
         ```
            
         ```bash   
-        # Symfony3
         $ app/console doctrine:database:create
         $ app/console doctrine:schema:update --force
         $ app/console doctrine:fixtures:load
