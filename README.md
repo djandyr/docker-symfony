@@ -90,24 +90,6 @@ $ docker rm $(docker ps -aq)
 $ docker rmi $(docker images -q)
 ```
 
-## FAQ
-
-* How I can add PHPMyAdmin?  
-Simply add this: (then go to [symfony.dev:8080](http://symfony.dev:8080))
-
-```
-phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    ports:
-        - "8080:80"
-    links:
-        - db
-```
-
-* Got this error: `ERROR: Couldn't connect to Docker daemon at http+docker://localunixsocket - is it running?
-If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.` ?  
-Run `docker-compose up -d` instead.
-
 * How to config Xdebug?
 Xdebug is configured out of the box!
 Just config your IDE to connect port  `9001` and id key `PHPSTORM`
