@@ -52,12 +52,7 @@ Docker-symfony gives you everything you need for developing Symfony application.
 
 ## Usage
 
-Just run `docker-compose up -d`, then:
-
-* Symfony app: visit [symfony.dev](http://symfony.dev)  
-* Symfony dev mode: visit [symfony.dev/app_dev.php](http://symfony.dev/app_dev.php)  
-* Logs (Kibana): [symfony.dev:81](http://symfony.dev:81)
-* Logs (files location): logs/nginx and logs/symfony
+Just run `docker-compose up -d`
 
 ## How it works?
 
