@@ -1,4 +1,4 @@
-# Docker Symfony (PHP7-FPM - NGINX - MySQL - ELK)
+# Docker Symfony (PHP7-APACHE - MySQL - ELK)
 
 Docker-symfony gives you everything you need for developing Symfony application. 
 
